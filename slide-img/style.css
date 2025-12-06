@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: azure;
+}
+
+.slide-container {
+    position: relative;
+    width: 700px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px 0;
+    
+}
+
+.slide-container img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.img-container {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 50px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.btn.prev {
+    left: 10px;
+}
+
+.btn.next {
+    right: 10px;
+}
+
+.btn:hover {
+    opacity: 2;
+}
