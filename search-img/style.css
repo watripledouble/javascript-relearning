@@ -1,0 +1,134 @@
+body {
+    background-color: whitesmoke;
+    margin: 0;
+    line-height: 1.6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    
+}
+
+#search-input {
+    width: 60%;
+    max-width: 400px;
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-right: 2.5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+    border-radius: 5px;
+}
+
+#search-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: rgb(33, 158, 33);
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+    width: 150px;
+}
+
+#search-btn:hover {
+    background-color: rgb(94, 190, 94);
+}
+
+
+.search-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.search-result {
+    margin-bottom: 60px;
+    width: 30%;
+    height: 5%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.search-result:hover img {
+    transform: scale(1.01);
+}
+
+.search-result img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.search-result a {
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+#show-more-btn {
+    background-color: rgb(33, 158, 33);
+    color: white;
+    border-radius: 5px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin: 20px auto;
+    border: none;
+    cursor: pointer;
+}
+
+
+#show-more-btn:hover {
+    background-color: rgb(94, 190, 94);
+}
+
+@media screen and (max-width:768px) {
+    .search-result{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .search-result{
+        width: 100%;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    #search-input {
+        margin-bottom: 20px;
+        width: 85%;
+    }
+
+    #search-btn {
+        width: 94%;
+    }
+}
+
