@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 100px;
+    letter-spacing: 5px;
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+.btn {
+    font-size: 30px;
+    border-radius: 8px;
+    background-color: white;
+    padding: 10px 40px;
+    white-space: nowrap;
+    font-weight: bold;
+    color: #2c2b2b;
+    transition: 0.7s background-color;
+    border: silver 1px solid;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: azure;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    top: 0;
+    overflow: hidden;
+}
+
+.split.left {
+    position: absolute;
+    background-image: url(./laptop.png);
+    left: 0;
+    background-size: cover;
+    background-color: rgb(156, 62, 62)
+}
+
+.split.right {
+    position: absolute;
+    background-image: url(./macbook.png);
+    right: 0;
+    background-size: cover;
+    background-color: rgb(71, 63, 182);
+}
+
+.active-left .left {
+    width: 75%;
+}
+
+.active-left .right {
+    width: 25%;
+}
+
+.active-right .left {
+    width: 25%;   
+}
+
+.active-right .right {
+    width: 75%;
+}
+
+.left , .right {
+    transition: width 1.5s ease-in-out;
+} 
+
