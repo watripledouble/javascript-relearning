@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.bookmark-form{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+input[type="url"] {
+    flex: 1;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+button#addBookmark {
+    border-radius: 10px;
+    background-color: #229c69;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+button#addBookmark:hover {
+    background-color: #649782;
+}
+
+button#deleteAll {
+    border-radius: 10px;
+    background-color: #9e2a16e7;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+button#deleteAll:hover {
+    background-color: #9c6b62e7;
+}
+
+.bookmark-item {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border: 2px solid #1d22b3;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #e6f2f5;
+}
+
+.bookmark-item a {
+    text-decoration: none;
+    color: #0d0d0d;
+}
+
+.bookmark-item a:hover {
+    text-decoration: underline;
+}
+
+.delete {
+    background-color: rgb(184, 49, 49);
+    color: white;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-size: medium;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.delete:hover {
+    background-color: #fc5a5a;
+}
+
+.edit {
+    font-size: medium;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(223, 223, 49);
+    border: none;
+}
+
+.edit:hover {
+    background-color: rgb(192, 192, 150);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(40, 130, 189);
+}
+
+@media (max-width:768px) {
+    main {
+        padding: 10px;
+    }
+
+    .bookmark-form {
+        flex-direction: column;
+    }
+
+    input[type="url"],
+    button#addBookmark,
+    button#deleteAll {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:345px) {
+    main {
+        padding: 10px;
+    }
+
+    .bookmark-form {
+        flex-direction: column;
+    }
+
+    input[type="url"],
+    button#addBookmark,
+    button#deleteAll {
+        margin-left: 0;
+    }
+}
